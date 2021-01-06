@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500&display=swap');
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Ubuntu' ,sans-serif;
+}
+
+.max-width{
+    max-width: 1300px;
+    padding: 0 80px ;
+    margin: auto;
+}
+/* nav bar styling star */
+ .navbar{
+     position: fixed;
+     padding: 20px 0;
+     z-index: 999;
+    width: 100%;
+    font-family: 'Ubuntu' ,sans-serif;
+    transition: all 0.2s ease;
+ }
+ .navbar.sticky{
+    padding: 15px 0;
+    background: #491287;
+
+ }
+ 
+
+ .navbar .max-width{
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+ }
+ .navbar .logo a {
+     font-size: 35px;
+     font-weight: 500;
+     color: #fff;
+     
+ }
+ .navbar .logo a span{
+     color: #2eb87e;
+     font-weight: 700;
+ }
+
+ .navbar.sticky .logo a span{
+     color:#01F702;
+ }
+ .navbar .menu li{
+     list-style: none;
+     display: inline-block;
+ }
+ .navbar .menu li a {
+     color: #fff;
+     font-size: 17px;
+     font-weight: 500 ;
+     margin-left:25px ;
+     transition: color 0.3s ease;
+ }
+ .navbar .menu li a:hover{
+     color:crimson;
+ }
+ .navbar.sticky .menu li a:hover{
+     color: #01F702;
+ }
+
+
+ /* menu btn styling */
+
+    .menu-btn {
+        color: #fff;
+        font-size: 23px;
+        cursor: pointer;
+        display: none;
+    }
+
+ /* home sextion styling start
+  */
+
+  .home{
+      display: flex;
+      background: linear-gradient(#0000005e,#0000005e), url(bg-1.jpg) no-repeat center;
+      background-attachment: fixed;
+      background-size: cover;
+      height: 100vh;
+      color: #fff;
+      font-family: 'Ubuntu' ,sans-serif;
+      min-height: 500px ;
+  }
+  .home .max-width{
+      margin: auto 0 auto 40px;
+  }
+  .home .home-content .text-1{
+    font-size: 27px;
+
+  }
+  .home .home-content .text-2{
+    font-size: 75px;
+    font-weight: 600;
+    margin-left: -1px;
+    
+  }
+  .home .home-content .text-3{
+    font-size: 40px;
+    margin: 5px 0 ;
+    
+  }
+  .home .home-content .text-3 span{
+      color: #01F702;
+      font-weight: 500;
+  }
+
+
+  /* about section styling start */
+.about{
+    margin-bottom: 50px;
+    width: 1300px;
+    height: 500px;
+}
+
+  .aboutTitle{
+      position: relative;
+      font-size: 40px;
+      
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      margin-bottom: 60px;
+    
+      padding-bottom: 20px;
+     
+
+
+  }
+  .about .aboutTitle::before{
+      content: "";
+      bottom: 0;
+      left: 50%;
+      width: 180px;
+      position: absolute;
+      height: 4px;
+      background: rgb(0, 0, 0);
+      transform: translateX(-50%);
+    
+  }
+
+  .about .aboutTitle::after{
+    content: "who i'm";
+    bottom: -7px;
+    left: 50%;
+    width: 80px;
+    font-size: 20px;
+    position: absolute;
+    
+    background: rgb(255, 255, 255);
+    transform: translateX(-50%);
+  
+}
+.about-content{
+    width: 45%;
+    float: right;
+    
+}
+.myimage{
+    float: left;
+    width: 300px;
+    height: 290px;
+    background-color: slategray;
+    height: 350px;
+   
+    margin-left: 100px;
+    box-shadow: 7px 2px 20px 0px #888888;
+    transition: all 0.4s ease;
+}
+
+.myimage:hover{
+    box-shadow:7px 2px 20px 0px #d4d4d4;;
+}
+  
+  .about img{
+      width: 100%;
+      height: 100%;
+      
+      
+      
+      
+  }
+
+ /* service section styling start */
+
+ .service{
+     background: royalblue;
+ }
